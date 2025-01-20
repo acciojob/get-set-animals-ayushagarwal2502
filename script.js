@@ -10,16 +10,13 @@ class Animal {
 		this._species = value;
 	}
 	makeSound(){
-		console.log(this.species+" makes a sound");
+		console.log(this.Species+" makes a sound");
 	}
 }
 
 class Dog extends Animal {
 	constructor(species){
 		super(species);
-	}
-	makeSound(){
-		console.log(this.species+" barks");
 	}
 	bark(){
 	   console.log("woof")
@@ -30,9 +27,7 @@ class Cat extends Animal {
 	constructor(species){
 		super(species);
 	}
-	makeSound(){
-		console.log(this.species+" purrs");
-	}
+	
 	purr(){
 	  console.log("purr")
 	}
