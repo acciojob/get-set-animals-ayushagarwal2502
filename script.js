@@ -15,6 +15,9 @@ class Dog extends Animal {
 	constructor(species){
 		super(species);
 	}
+	makeSound(){
+		console.log(this.species+" barks");
+	}
 	bark(){
 	   console.log("woof")
 	}
@@ -24,11 +27,13 @@ class Cat extends Animal {
 	constructor(species){
 		super(species);
 	}
-		purr(){
-		  console.log("purr")
+	makeSound(){
+		console.log(this.species+" purrs");
+	}
+	purr(){
+	  console.log("purr")
 	}
 }
-// Do not change the code below this line
 window.Animal = Animal;
 window.Dog = Dog;
 window.Cat = Cat;
